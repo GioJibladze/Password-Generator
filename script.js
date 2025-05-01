@@ -2,15 +2,17 @@ let lang = 'en';
 const translations = {
   en: {
     lengthLabel: "Password Length",
+    password: "Generated Password",
     uppercase: "Uppercase",
     lowercase: "Lowercase",
     numbers: "Numbers",
     symbols: "Symbols",
     generate: "Generate Password",
-    copy: "Copy Password"
+    copy: "Copy Password",
   },
   ge: {
     lengthLabel: "პაროლის სიგრძე",
+    password: "გენერირებული პაროლი",
     uppercase: "დიდი ასოები",
     lowercase: "პატარა ასოები",
     numbers: "ციფრები",
@@ -24,6 +26,7 @@ function toggleLanguage() {
   const t = translations[lang];
   document.getElementById('lang-label').innerText = lang === 'en' ? 'GE' : 'EN';
   document.getElementById('length-label').childNodes[0].nodeValue = t.lengthLabel + ': ';
+  document.getElementById('generated-password').innerText = t.password;
   document.getElementById('label-uppercase').innerText = t.uppercase;
   document.getElementById('label-lowercase').innerText = t.lowercase;
   document.getElementById('label-numbers').innerText = t.numbers;
