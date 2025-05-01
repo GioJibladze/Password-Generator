@@ -75,7 +75,11 @@ button.copy-btn:hover, button.generate-btn:hover {
     font-weight: bold; 
     cursor: pointer; 
     color: #FF5F1F; 
-    font-size: 1rem; }
+    font-size: 1rem; 
+}
+#lang-label{
+    text-decoration: underline 2px solid skyblue;
+}
 #range-value { 
     font-weight: bold; 
 }
